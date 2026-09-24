@@ -1,0 +1,7 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: Georgia, "Noto Serif", serif;
+  background: #F6F4EE;
+  color: #1B1B1B;
+}
