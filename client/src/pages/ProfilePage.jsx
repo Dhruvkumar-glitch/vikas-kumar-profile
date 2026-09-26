@@ -63,7 +63,7 @@ export default function ProfilePage() {
   const [usingFallback, setUsingFallback] = useState(true);
 
   useEffect(() => {
-    fetch("/api/profile")
+    fetch(`${import.meta.env.VITE_API_URL || ""}/api/profile`)
       .then((res) => {
         if (!res.ok) throw new Error("No profile from API yet");
         return res.json();
