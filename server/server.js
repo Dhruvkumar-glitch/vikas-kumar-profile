@@ -7,7 +7,6 @@ import adminRoutes from "./routes/admin.js";
 import chatRoutes from "./routes/chat.js";
 
 dotenv.config();
-console.log("DEBUG ADMIN_PASSWORD is:", JSON.stringify(process.env.ADMIN_PASSWORD));
 
 const app = express();
 app.use(cors());

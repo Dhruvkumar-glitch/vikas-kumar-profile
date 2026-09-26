@@ -341,3 +341,19 @@ p {
     grid-template-columns: 1fr 1fr;
   }
 }
+.expertise-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.expertise-chip {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: var(--navy);
+  background: #fff;
+  border: 1px solid var(--amber);
+  padding: 7px 14px;
+  border-radius: 20px;
+}

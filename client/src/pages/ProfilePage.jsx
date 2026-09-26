@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Hero from "../components/Hero.jsx";
 import About from "../components/About.jsx";
 import Services from "../components/Services.jsx";
+import KeyExpertise from "../components/KeyExpertise.jsx";
 import Experience from "../components/Experience.jsx";
 import Highlights from "../components/Highlights.jsx";
 import Contact from "../components/Contact.jsx";
@@ -19,6 +20,17 @@ const fallbackProfile = {
   bio: "Deputy General Manager leading business development and strategic growth at Vynk Parking Solutions. Focused on building strong client relationships and delivering customized parking management solutions across multiple sites.",
   about:
     "Deputy General Manager – Business Development & Strategy, driving revenue growth and expanding business opportunities through strategic client engagement and market expansion initiatives.",
+  expertise: [
+    "Multi-Site Parking Operations",
+    "B2B Contract Negotiation",
+    "Revenue Optimization",
+    "SLA & Quality Compliance",
+    "Manpower Coordination",
+    "Vendor Management",
+    "Parking Tech Systems (ANPR, Ticketing)",
+    "Client Escalation Handling",
+    "New Site Launch & Setup"
+  ],
   experience: [
     {
       title: "Deputy General Manager — Business Development, Vynk Parking Solutions Pvt. Ltd.",
@@ -75,6 +87,7 @@ export default function ProfilePage() {
       )}
       <Hero profile={profile} />
       <About about={profile.about} />
+      <KeyExpertise expertise={profile.expertise} />
       <Services services={profile.services} />
       <Experience items={profile.experience} />
       <Highlights stats={profile.stats} />

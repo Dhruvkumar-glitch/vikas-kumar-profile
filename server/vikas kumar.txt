@@ -1,0 +1,9 @@
+MONGO_URI=MONGO_URI=mongodb+srv://dhruvkumarujh7_db_user:S8G7J5yS9mOk03Wo@cluster0.vvmwunv.mongodb.net/?appName=Cluster0
+PORT=5000
+
+# This is your admin login password - change it to whatever you want
+ADMIN_PASSWORD=vikas@2026
+
+# Optional - only needed for the "Ask AI" chat widget to work
+# Get a free key at https://aistudio.google.com/apikey
+GEMINI_API_KEY= 

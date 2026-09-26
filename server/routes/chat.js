@@ -53,7 +53,7 @@ ${context}`;
       }
     );
 
-    const data = await response.json();
+    const data = await response.json(); console.log("Gemini API response:", JSON.stringify(data));
     const reply =
       data?.candidates?.[0]?.content?.parts?.[0]?.text ||
       "Sorry, I couldn't generate a response right now.";

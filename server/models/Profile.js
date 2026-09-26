@@ -37,6 +37,7 @@ const profileSchema = new mongoose.Schema(
     experience: [experienceSchema],
     stats: [statSchema],
     services: [serviceSchema],
+    expertise: [String],
     contact: {
       email: String,
       phone: String,

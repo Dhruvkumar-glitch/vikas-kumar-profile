@@ -15,6 +15,17 @@ const sampleData = {
   bio: "Deputy General Manager leading business development and strategic growth at Vynk Parking Solutions. Focused on building strong client relationships and delivering customized parking management solutions across multiple sites.",
   about:
     "Deputy General Manager – Business Development & Strategy, driving revenue growth and expanding business opportunities through strategic client engagement and market expansion initiatives.",
+  expertise: [
+    "Multi-site parking operations",
+    "B2B contract negotiation",
+    "Revenue optimization",
+    "SLA and quality compliance",
+    "Manpower coordination",
+    "Vendor management",
+    "Parking tech systems (ANPR, ticketing)",
+    "Client escalation handling",
+    "New site launch and setup"
+  ],
   experience: [
     {
       title: "Deputy General Manager — Business Development, Vynk Parking Solutions Pvt. Ltd.",
