@@ -26,7 +26,7 @@ export default function AdminDashboard() {
 
   useEffect(() => {
     if (!token) return;
-    fetch("/api/profile")
+    fetch(`${import.meta.env.VITE_API_URL || ""}/api/profile`)
       .then((res) => res.json())
       .then((data) => {
         setProfile({ ...emptyProfile, ...data });
@@ -39,7 +39,7 @@ export default function AdminDashboard() {
     e.preventDefault();
     setLoginError("");
     try {
-      const res = await fetch("/api/admin/login", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL || ""}/api/admin/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ password })
@@ -103,7 +103,7 @@ export default function AdminDashboard() {
   async function handleSave() {
     setStatus("Saving…");
     try {
-      const res = await fetch("/api/profile", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL || ""}/api/profile`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
